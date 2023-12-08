@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Learn Foreign Language</title>
+</head>
+<body>
+
+<div id="app">
+    <div id="card-container" class="flex-container"></div>
+    <div id="word-counter">Пройдено слів: <span id="word-count">0</span></div>
+    <input type="text" id="translation-input" placeholder="Введіть переклад">
+    <button id="check-btn">Check</button>
+    
+    <div id="results">
+        <div class="column">
+            <h3>Right</h3>
+            <div id="correct-words" class="word-list"></div>
+            <div id="correct-count">Right: <span>0</span></div>
+        </div>
+        <div class="column">
+            <h3>Wrong</h3>
+            <div id="incorrect-words" class="word-list"></div>
+            <div id="incorrect-count">Wrong: <span>0</span></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Results</h2>
+        <p id="knowledge-level"></p>
+    </div>
+</div>
+
+<script src="jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
